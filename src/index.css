@@ -1,13 +1,58 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Cabin+Sketch:wght@400;700&family=Graduate&family=Merienda+One&family=Monoton&family=Poppins:wght@300;400;500;600;800&display=swap');
+
+/* 
+font-family: 'Bungee', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Graduate', cursive;
+font-family: 'Merienda One', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Poppins', sans-serif;
+
+*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: rgb(31,26,115);
+  background: linear-gradient(90deg, rgba(31,26,115,1) 0%, rgba(113,18,144,1) 50%, rgba(74,31,142,1) 100%);
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100vw; height: 100vh;
+}
+
+.clock,
+.invalid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center; 
+}
+
+.clock section {
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 0 12px;
+  background: rgb(22,42,129);
+  background: linear-gradient(90deg, rgba(22,42,129,1) 0%, rgba(60,18,144,0.6699054621848739) 50%, rgba(59,17,124,1) 100%);
+}
+
+.clock section,
+.clock > span,
+.invalid > p {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Merienda One', cursive;
 }
